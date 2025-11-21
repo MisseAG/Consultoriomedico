@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uniquindio.edu.parcial3consultoriomedico.controllers.DoctorController">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="404.0" prefWidth="600.0" spacing="5.0" style="-fx-background-color: #DADAE1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <TableView fx:id="tableCitas" editable="false" prefHeight="322.0" prefWidth="560.0" styleClass="custom-table" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="colID" prefWidth="40.800018310546875" text="Id" />
+                        <TableColumn fx:id="colDoctor" prefWidth="78.39996337890625" text="Nombre" />
+                        <TableColumn fx:id="colTelefono" prefWidth="82.4000244140625" text="Teléfono" />
+                        <TableColumn fx:id="colCorreo" prefWidth="75.0" text="Correo" />
+                        <TableColumn fx:id="colEspecialidad" prefWidth="75.0" text="Especialidad" />
+                    </columns>
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                    </VBox.margin>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+                <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="55.0" prefWidth="600.0" spacing="25.0" VBox.vgrow="SOMETIMES">
+                    <children>
+                        <Button fx:id="btnAdd" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addDoctor" prefHeight="33.0" prefWidth="105.0" styleClass="dashboardButton" text="Agregar" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnDelete" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#deleteDoctor" prefWidth="105.0" styleClass="dashboardButton" text="Eliminar" />
+                        <Button fx:id="btnDeseleccionar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#deseleccionar" prefHeight="33.0" prefWidth="105.0" styleClass="dashboardButton" text="Deseleccionar" />
+                        <Button fx:id="btnDetails" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#showDetails" prefWidth="105.0" styleClass="dashboardButton" text="Detalles" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="18.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

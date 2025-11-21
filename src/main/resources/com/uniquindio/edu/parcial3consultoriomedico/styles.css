@@ -1,0 +1,141 @@
+
+/*
+Paleta monocromátiac azul
+#073669
+#224C81
+#3D6199
+#5877B0
+#738CC8
+*/
+
+.dashboardButton {
+    -fx-background-color: linear-gradient(to bottom, #224C81, #073669);
+    -fx-text-fill: white;
+    -fx-text-fill: #cacaca;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-padding: 5 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 8, 0, 0, 2);
+    -fx-border-color: transparent;
+    -fx-border-radius: 10;
+    -fx-transition: all 0.3s ease;
+}
+
+.dashboardButton:hover {
+    -fx-background-color: linear-gradient(to right, #3D6199, #3D6199);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 10, 0, 0, 3);
+    -fx-translate-y: -1;
+}
+
+.dashboardButton:pressed {
+    -fx-background-color: linear-gradient(to right, #355E8A, #2E4F68);
+    -fx-effect: none;
+    -fx-translate-y: 1;
+}
+
+#buttonUp{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 8, 0, 0, 2);
+    -fx-border-color: transparent;
+    -fx-transition: all 0.3s ease;
+}
+
+#buttonUp:hover {
+    -fx-border-color: transparent transparent white transparent;
+    -fx-border-width: 2px;
+    -fx-translate-y: -1;
+}
+
+#buttonUp:pressed {
+    -fx-opacity: 0.6;
+    -fx-effect: none;
+    -fx-translate-y: 1;
+}
+
+#upDashboard{
+    -fx-background-color: linear-gradient(to bottom, #224C81, #073669);
+}
+
+#titulo{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 32px;
+}
+
+
+.custom-table {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #1E293B;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 5, 0, 0, 1);
+
+    -fx-selection-bar: #1a3849;
+    -fx-selection-bar-non-focused: #1a3849;
+    -fx-selection-bar-text: white;
+}
+
+.custom-table .column-header-background{
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-color: transparent transparent #16222A transparent;
+}
+
+.custom-table .column-header-background .label{
+    -fx-text-fill: #16222A;
+}
+
+.custom-table .column-header{
+    -fx-background-color: transparent;
+}
+
+.custom-table .table-row-cell:filled:selected {
+    -fx-background-color: #1a3849;
+    -fx-text-fill: white;
+}
+
+.custom-table .table-row-cell:selected .text{
+    -fx-text: white;
+}
+.custom-table .table-row-cell:selected:focused.text{
+    -fx-background-color: #254e68;
+    -fx-text: white;
+}
+
+.custom-table .table-row-cell{
+    -fx-background-color: transparent;
+    -fx-text-fill: #16222A;
+}
+
+.custom-table .scroll-bar:vertical {
+    -fx-pref-width: 10px;
+}
+
+.custom-table .scroll-bar:vertical:hover,
+.custom-table .scroll-bar:horizontal:hover{
+    -fx-cursor: hand;
+}
+
+.custom-table .scroll-bar:horizontal {
+    -fx-pref-height: 10px;
+}
+
+.custom-table .scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+
+.custom-table .scroll-bar .thumb {
+    -fx-background-color: transparent;
+    -fx-border-color: #1a3849;
+    -fx-border-width: 1px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}

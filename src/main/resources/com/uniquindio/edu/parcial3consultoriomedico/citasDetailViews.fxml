@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefWidth="350.0" prefHeight="300.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.uniquindio.edu.parcial3consultoriomedico.controllers.CitaDetailsController">
+
+    <children>
+        <VBox spacing="10.0">
+            <padding>
+                <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+            </padding>
+            <children>
+                <Label fx:id="lblId" text="ID:" />
+                <Label fx:id="lblFecha" text="Fecha:" />
+                <Label fx:id="lblHora" text="Hora:" />
+                <Label fx:id="lblPaciente" text="Paciente:" />
+                <Label fx:id="lblMedico" text="Médico:" />
+                <Label fx:id="lblEspecialidad" text="Especialidad:" />
+                <Label fx:id="lblMotivo" text="Motivo:" />
+                <Label fx:id="lblEstado" text="Estado:" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
